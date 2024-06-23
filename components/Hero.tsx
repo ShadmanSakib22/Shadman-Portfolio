@@ -1,7 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { BiCaretDown } from "react-icons/bi";
-import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import SpecButton from "./ui/SpecButton";
 
 const Hero = () => {
@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
           {/* Buttons - side by side */}
           <div className="inline-flex flex-col sm:flex-row gap-4 self-center md:self-start">
-            <a href="#projects">
+            <a href="#rProjects">
               <SpecButton
                 title="See my work"
                 icon={<BiCaretDown />}
@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Socials - side by side */}
           <div className="flex justify-end mt-8 gap-4 text-2xl">
             <a
-              href="https://github.com"
+              href="https://github.com/ShadmanSakib22"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-300 dark:text-white text-indigo-950"
@@ -66,7 +66,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/shadman-sakib-3b8bb3298/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-300 dark:text-white text-indigo-950"
@@ -74,18 +74,10 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="mailto:sadman.sakib10000@gmail.com"
+              href="mailto:sadmansakib10000@gmail.com"
               className="hover:text-teal-300 dark:text-white text-indigo-950"
             >
               <FaEnvelope />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-teal-300 dark:text-white text-indigo-950"
-            >
-              <FaFacebook />
             </a>
           </div>
         </div>
