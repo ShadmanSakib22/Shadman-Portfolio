@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 40px !important;
+  /* Adjust the value to add more vertical spacing */
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.slick-dots button::before {
+  color: teal !important;
+  border-radius: 50%;
+  border: 1px solid teal;
+  background-color: transparent;
+  height: 24px;
+  width: 24px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}
