@@ -9,7 +9,7 @@ export const projects = [
     id: 1,
     title: "Artisan Hub: Artist Patron Website",
     des: "Features- User Authentication, Blog Posts, Subscription, Tipping, Newsletter, Commission, Comment system.",
-    img: "/artisanhub.jpg",
+    img: "/artisanhub.JPG",
     iconLists: [
       "icons/html-icon.svg",
       "icons/css-icon.svg",
@@ -24,7 +24,7 @@ export const projects = [
     id: 2,
     title: "Monster Burger: Burger Cafe Website",
     des: "Simple Burger Cafe Landing page website. Built Front-End with ReactJs & Tailwind.",
-    img: "/burger-cafe.jpg",
+    img: "/burger-cafe.JPG",
     iconLists: ["icons/reactjs-icon.svg", "icons/tailwind-icon.svg"],
     link: "https://burger-cafe-three.vercel.app/",
   },
@@ -32,7 +32,7 @@ export const projects = [
     id: 3,
     title: "Tech Solutions: Remote Technical Support Website",
     des: "Ongoing Capstone Project: Landing page & Profile page completed. Working on Communication features & Remote Support.",
-    img: "/techsolutions.jpg",
+    img: "/techsolutions.JPG",
     iconLists: [
       "icons/reactjs-icon.svg",
       "icons/tailwind-icon.svg",
@@ -45,7 +45,7 @@ export const projects = [
     id: 4,
     title: "My Portfolio: This Page",
     des: "Built with the aid of Aceternity UI. Took the challenge of learning NextJs & TS to develop my portfolio.",
-    img: "/portfolio.jpg",
+    img: "/portfolio.JPG",
     iconLists: [
       "icons/nextjs-icon.svg",
       "icons/tailwind-icon.svg",
