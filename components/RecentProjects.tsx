@@ -1,6 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 import { WobbleCard } from "./ui/wobble-card";
 
 export const projects = [
@@ -50,7 +51,7 @@ export const projects = [
       "icons/tailwind-icon.svg",
       "icons/ts-icon.svg",
     ],
-    link: "/shadmans.portfolio.vercel.com",
+    link: "https://shadmans.portfolio.vercel.com/",
   },
 ];
 
@@ -69,10 +70,12 @@ const RecentProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-4/5 mx-auto mt-4">
         {projects.map((item) => (
           <WobbleCard className="col-span-1 m-4 p-4 rounded-xl" key={item.id}>
-            <img
+            <Image
               src={item.img}
-              alt="cover"
+              alt={`Cover image for ${item.title}`}
               className="rounded-xl border-blue-200 dark:border-gray-600 border-2"
+              width={500}
+              height={300}
             />
             <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 dark:text-white text-indigo-950 mt-4">
               {item.title}
@@ -80,21 +83,28 @@ const RecentProjects = () => {
             <p className="text-sm line-clamp-2 dark:text-white text-indigo-900 mt-2">
               {item.des}
             </p>
-            <div className="flex items-center justify-between mt-7 mb-3">
-              <div className="flex items-center space-x-2">
+            <div className="flex justify-between items-center mt-7 mb-3 flex-wrap">
+              <div className="flex items-center">
                 {item.iconLists.map((icon, index) => (
                   <div
                     key={index}
                     className="border dark:border-white/[.2] border-black rounded-full dark:bg-slate-900 bg-gray-50 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                   >
-                    <img src={icon} alt="icons" className="p-2" />
+                    <Image
+                      src={icon}
+                      alt="Technology icon"
+                      className="p-2"
+                      width={42}
+                      height={42}
+                    />
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center items-center">
+              <div className="flex items-end m-2 whitespace-nowrap ">
                 <a
                   href={item.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex lg:text-xl md:text-xs text-sm tracking-tight dark:text-white text-indigo-950"
                 >
                   Live Site

@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Slider from "react-slick";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
@@ -36,7 +37,8 @@ export function About() {
         About <span className="text-teal-200">me:</span>
       </h1>
       <p className="dark:text-white text-indigo-950 mt-4 text-sm md:text-lg md:tracking-wide mx-auto">
-        Hi, I'm Shadman Sakib! Passionate front-end developer from Dhaka. <br />
+        Hi, I&apos;m Shadman Sakib! Passionate front-end developer from Dhaka.{" "}
+        <br />
         Bilingual (English & Bengali) thanks to growing up abroad.
       </p>
       <div className="py-10 mx-auto px-8">
@@ -87,7 +89,7 @@ export function About() {
           <Card
             desc={[
               "Online Gaming & Reading are some of favorite pass-times.",
-              "Online Gaming in particular has had a big part in my career choice. My first experience with REST API's is when I made a Website that tracked in-game Markets for my guild.",
+              "Online Gaming in particular has had a big part in my career choice. My first experience with REST API&apos;s is when I made a Website that tracked in-game Markets for my guild.",
               "While working on personal projects like these, I realized early on that web development was the right career path for me.",
             ]}
             covering="My Hobbies"
@@ -113,7 +115,7 @@ const Card = ({
   covering: string;
   children?: React.ReactNode;
 }) => {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -134,7 +136,13 @@ const Card = ({
 
       <div className="z-20 absolute dark:text-blue-200 text-indigo-950 font-extrabold tracking-tight text-xl text-center group-hover/canvas-card:opacity-0 transition duration-200">
         {covering}
-        <img src="cursor.svg" className="w-2/5 m-auto mt-4" />
+        <Image
+          src="/cursor.svg"
+          alt="Cursor"
+          className="w-2/5 m-auto mt-4"
+          width={200}
+          height={200}
+        />
       </div>
       <ul className="text-sm text-left dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4 group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
         {desc.map((item, index) => (

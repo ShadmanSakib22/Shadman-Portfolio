@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
           href="#hero"
           className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight"
         >
-          Shadman's <span className="text-lg">Portfolio</span>
+          Shadman&apos;s <span className="text-lg">Portfolio</span>
         </a>
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex space-x-8 text-gray-600 dark:text-gray-300">

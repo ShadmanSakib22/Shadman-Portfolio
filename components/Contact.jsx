@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -63,10 +64,12 @@ const Contact = () => {
 
       <div className="mt-10 grid grid-cols-2 md:grid-cols-3 mx-auto w-4/5 max-h-[28rem] max-w-[1200px] gap-0 border-slate-700 hover:border-slate-700 border-2 rounded-lg">
         <div className="col-span-1 hidden md:block mx-auto ">
-          <img
+          <Image
             src="/me.png"
             alt="Me"
             className="w-[25rem] h-[25rem] object-cover shadow-md rounded-l-lg"
+            width={400}
+            height={400}
           />
         </div>
         <div className="col-span-2 bg-white dark:bg-slate-900 p-6 rounded-lg md:rounded-r-lg max-h-[25rem]">
