@@ -16,9 +16,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Shadman Sakib's Portfolio for Intern Front-End Developer Position"
+          content="Shadman Sakib&apos;s Portfolio for Intern Front-End Developer Position"
         />
-        <title>Shadman's Portfolio</title>
+        <title>Shadman&apos;s Portfolio</title>
       </Head>
       <div>
         <Navbar />
