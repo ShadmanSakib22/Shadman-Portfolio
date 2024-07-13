@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="font-bold text-[32px] md:text-5xl lg:text-6xl">
             <div className="md:my-4 sm:my-2">
               <div className="dark:text-white text-indigo-950 leading-full tracking-wide">
-                <span>Shadman Sakib: </span>
+                <div>Shadman Sakib: </div>
                 <span className="text-cyan-300 whitespace-nowrap">
                   Web
                 </span>
