@@ -28,7 +28,7 @@ const Hero = () => {
               <div className="dark:text-white text-indigo-950 leading-full tracking-wide">
                 <span>Shadman Sakib: </span>
                 <span className="text-cyan-300 whitespace-nowrap">
-                  Front-End
+                  Web
                 </span>
                 <span className="text-teal-300"> Developer</span>
               </div>
